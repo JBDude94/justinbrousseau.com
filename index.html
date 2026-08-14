@@ -24,13 +24,19 @@
         h1 {
             font-size: 1.8rem;
             font-weight: 600;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             letter-spacing: -0.02em;
+            text-align: center;
         }
 
-        .greeting {
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
+        .photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center 20%;
+            display: block;
+            margin: 0 auto 2rem;
         }
 
         p {
@@ -50,17 +56,48 @@
             text-decoration-color: #1a6b4a;
         }
 
-        .section {
+        .newsletter {
             margin-top: 2rem;
         }
 
-        .section-label {
-            font-size: 0.85rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: #888;
-            margin-bottom: 0.5rem;
+        .signup-form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-top: 0.75rem;
+        }
+
+        .signup-form input {
+            padding: 0.6rem 0.9rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-family: inherit;
+            background: #fff;
+            transition: border-color 0.2s;
+        }
+
+        .signup-form input:focus {
+            outline: none;
+            border-color: #1a6b4a;
+        }
+
+        .signup-form button {
+            padding: 0.6rem 1.2rem;
+            background: #1a6b4a;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-family: inherit;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s;
+            align-self: center;
+        }
+
+        .signup-form button:hover {
+            background: #155a3e;
         }
 
         @media (max-width: 480px) {
@@ -71,49 +108,46 @@
             h1 {
                 font-size: 1.5rem;
             }
+
+            .photo {
+                width: 140px;
+                height: 140px;
+            }
+
+            .signup-form button {
+                align-self: stretch;
+            }
         }
     </style>
 </head>
 <body>
     <h1>Justin Brousseau</h1>
 
-    <p class="greeting">Hey!</p>
+    <img src="photo.jpg" alt="Justin Brousseau" class="photo">
 
     <p>
-        I build hardware products — from concept through mass production.
-        Spent 10 years in consumer electronics at Bose and Ring, now leading programs
-        at <a href="https://www.bee.ai">Bee</a>, a wearable AI company in San Francisco.
+        I build products — from concept through mass production. I've spent 10 years
+        in consumer electronics building speakers, security cameras, and now wearables.
     </p>
 
     <p>
-        Interested in ambient computing, hardware that disappears into your life,
-        and getting physical products from prototype to millions of units.
+        Currently, I'm working as a <a href="/work">Technical Program Manager</a> at
+        <a href="https://bee.computer">Bee</a> creating wearable devices that capture
+        your day to day so you never miss a thing.
     </p>
 
-    <div class="section">
-        <p class="section-label">Now</p>
-        <p>
-            Technical Program Manager at Bee, taking AI wearables from EVT through
-            mass production. Currently shipping <a href="/work">three products</a>
-            simultaneously with manufacturing partners in China.
-        </p>
-    </div>
-
-    <div class="section">
-        <p class="section-label">Previously</p>
-        <p>
-            10 years at Bose building headphones and speakers.
-            Then smart home hardware at Blink &amp; Ring (Amazon).
-            Mechanical engineer turned TPM.
-        </p>
-    </div>
-
-    <div class="section">
-        <p class="section-label">Elsewhere</p>
-        <p>
-            <a href="https://www.linkedin.com/in/justinbrousseau">LinkedIn</a> ·
-            <a href="mailto:justin@justinbrousseau.com">Email</a>
-        </p>
+    <div class="newsletter">
+        <p>Follow my email newsletter for additional thoughts and insights.</p>
+        <form action="https://gmail.us8.list-manage.com/subscribe/post?u=efe62e2796cea9fa299a90ae6&amp;id=051e59ce86&amp;f_id=00c036e3f0" method="post" target="_blank">
+            <div class="signup-form">
+                <input type="text" name="FNAME" placeholder="Name">
+                <input type="email" name="EMAIL" placeholder="Email" required>
+                <button type="submit">Sign Up</button>
+            </div>
+            <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                <input type="text" name="b_efe62e2796cea9fa299a90ae6_051e59ce86" tabindex="-1" value="">
+            </div>
+        </form>
     </div>
 </body>
 </html>

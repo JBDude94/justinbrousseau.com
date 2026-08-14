@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work - Justin Brousseau</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: #2c2c2c;
+            background: #fafafa;
+            padding: 3rem 2rem;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        a {
+            color: #1a6b4a;
+            text-decoration: underline;
+            text-decoration-color: #1a6b4a40;
+            text-underline-offset: 2px;
+            transition: text-decoration-color 0.2s;
+        }
+
+        a:hover {
+            text-decoration-color: #1a6b4a;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.4rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .role {
+            margin-bottom: 1.5rem;
+        }
+
+        .role-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .role-company {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+        }
+
+        .company-name {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .dates {
+            font-size: 0.9rem;
+            color: #666;
+            white-space: nowrap;
+        }
+
+        .role-intro {
+            font-size: 0.92rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-title {
+            font-size: 0.92rem;
+            font-weight: 600;
+            text-decoration: underline;
+            margin-top: 1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 1.3rem;
+            margin-bottom: 0.75rem;
+        }
+
+        li {
+            font-size: 0.92rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .education-line {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-size: 0.95rem;
+        }
+
+        .education-line span:first-child {
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .skills-category {
+            font-size: 0.92rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .skills-category strong {
+            font-weight: 600;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 2rem 1.5rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .role-company {
+                flex-direction: column;
+            }
+
+            .dates {
+                font-size: 0.85rem;
+            }
+
+            .education-line {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="/" class="back">&larr; Home</a>
+
+    <h1>Justin Brousseau</h1>
+    <p class="contact">(774) 262-0754 &middot; jbbrousseau@gmail.com</p>
+
+    <h2>Work Experience</h2>
+
+    <!-- Bee -->
+    <div class="role">
+        <div class="role-title">Sr. Technical Program Manager</div>
+        <div class="role-company">
+            <span class="company-name">Amazon (Bee), San Francisco CA</span>
+            <span class="dates">2025 - present</span>
+        </div>
+        <ul>
+            <li>Joined a ~10-person startup within Amazon as the sole TPM, owning product and program responsibilities across a portfolio of AI wearable products from concept through mass production.</li>
+            <li>Defined product roadmap and drove simultaneous development of 2 new hardware products.</li>
+            <li>Managed cross-functional team spanning ME, EE, Firmware, Software, Manufacturing, Operations, Packaging, and Compliance. Led toll gate reviews, manufacturing readiness assessments, and safety/certification discussions.</li>
+            <li>Traveled on-site to CM in China for each build; managed $2M+ in combined NRE/tooling across 2 products with 8+ vendors.</li>
+            <li>Managed 50-person contract manufacturer team (Goertek, China) across EVT, DVT, and MP builds for concurrent products.</li>
+            <li>Established manufacturing test criteria and acceptance standards for production line validation; personally verified production firmware functionality across device fleet prior to MP release.</li>
+            <li>Owned 12 concurrent certification workstreams: FCC, ISED (Canada), UL 62368-1, UL 4200A, Apple MFi/Find My, CPSC magnet safety (16 CFR 1262), SAR evaluation, UN38.3, RoHS/REACH, CEC/DOE, BT-SIG, GCC.</li>
+            <li>Led safety investigation after field failure. Root-caused, and engaged third-party lab for independent fault analysis.</li>
+            <li>Designed and executed 120-person beta program with Amazon Preview team. 2-week hardware + software validation that directly informed final product requirements.</li>
+        </ul>
+    </div>
+
+    <!-- Blink -->
+    <div class="role">
+        <div class="role-title">Sr. Technical Program Manager</div>
+        <div class="role-company">
+            <span class="company-name">Amazon (Blink), North Reading MA</span>
+            <span class="dates">2021 - 2025</span>
+        </div>
+        <p class="role-intro">Led technical program management for Blink's highest-revenue products (Mini 2, Mini 2K+, Video Doorbell) delivering $100M+ in annual revenue. Accelerated product development cycles to &lt;12 months from ideation to market launch.</p>
+
+        <div class="product-title">Blink Mini 2K+:</div>
+        <ul>
+            <li>Launched Blink's first 2K resolution camera in 7 months, introducing new SoC, image sensor, digital mic, and WiFi stack.</li>
+            <li>Integrated an edge-based CV motion detection algorithm for person and vehicles.</li>
+            <li>Implemented field testing Grafana dashboard to monitor device errors against customer sentiment surveys.</li>
+        </ul>
+
+        <div class="product-title">Blink Mini 2:</div>
+        <ul>
+            <li>Delivered indoor/outdoor camera with smart detection and 143&deg; FoV in 12 months, achieving 4.4-star rating.</li>
+            <li>Introduced edge-based person and vehicle detection CV model; improved outdoor nighttime motion detection precision 50% and recall 25% gen-over-gen.</li>
+            <li>Managed hardware validation, compliance certification, and field testing across 8 international markets.</li>
+            <li>Tracked post-launch KPIs and coordinated 2 software updates that reduced negative reviews by 20%.</li>
+        </ul>
+
+        <div class="product-title">Blink Video Doorbell:</div>
+        <ul>
+            <li>Launch TPM for Blink's first video doorbell. Drove product readiness, toll gate reviews, and go-to-market execution. Led Blink's first international product launches, owning regional functional updates, field testing, and compliance certification for Europe and Australia market entry.</li>
+            <li>Led cross-functional team (firmware + cloud) to implement power optimization post-launch that reduced customer battery replacement frequency by 83%.</li>
+            <li>Developed measurement framework analyzing AC vs. battery usage across 10,000+ deployed units.</li>
+            <li>Tracked post-launch field performance and drove running change to an improved snap-on back plate design.</li>
+        </ul>
+    </div>
+
+    <!-- Bose -->
+    <div class="role">
+        <div class="role-title">Engineering Program Manager</div>
+        <div class="role-company">
+            <span class="company-name">Bose, Framingham MA</span>
+            <span class="dates">2018 - 2021</span>
+        </div>
+
+        <div class="product-title">Outdoor Arrayable Loudspeaker - Lead Program Manager:</div>
+        <ul>
+            <li>Led early-stage development (concept through EVT) of Bose's outdoor arrayable loudspeaker with integrated electronics. Defined product requirements, $1.5M development budget, statements of work, and project management framework.</li>
+            <li>Onboarded a leading live event production company as design partner. Drove requirements collaboration, led design reviews, managed prototype builds, and coordinated cross-functional alignment and international compliance planning.</li>
+        </ul>
+    </div>
+
+    <h2>Education</h2>
+    <div class="education-line">
+        <span>Worcester Polytechnic Institute (WPI) - B.S. Mechanical Engineering</span>
+        <span class="dates">2016 &middot; GPA 3.73</span>
+    </div>
+
+    <h2>Skills</h2>
+    <p class="skills-category"><strong>Product:</strong> Product Strategy, Go-to-Market Planning, Pricing, Roadmap Definition, User Research, Beta Programs, NPI (EVT/DVT/MP)</p>
+    <p class="skills-category"><strong>Technical:</strong> Python, BLE/IoT, BOM Management, Hardware Validation, FCC/Regulatory Compliance, Factory Test Definition</p>
+    <p class="skills-category"><strong>Tools:</strong> Jira, Confluence, PowerBI, Grafana, Agile/Scrum</p>
+    <p class="skills-category"><strong>Domain:</strong> Consumer Electronics, AI/ML Hardware, Wearables, Computer Vision, Contract Manufacturing, Supply Chain</p>
+</body>
+</html>
